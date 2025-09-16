@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosário Interativo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome screen -->
+        <div id="welcome-screen" class="screen active">
+            <div class="welcome-content">
+                <div class="rosary-icon">
+                    <i class="fas fa-cross"></i>
+                </div>
+                <h1>Rosário Interativo</h1>
+                <p class="subtitle">Uma jornada de fé e oração</p>
+                <button id="start-btn" class="btn-primary">
+                    <i class="fas fa-play"></i>
+                    Começar a Rezar
+                </button>
+                <button id="guide-btn" class="btn-secondary">
+                    <i class="fas fa-book"></i>
+                    Como Rezar o Rosário
+                </button>
+            </div>
+        </div>
+
+        <!-- Guide screen -->
+        <div id="guide-screen" class="screen">
+            <div class="guide-content">
+                <div class="guide-header">
+                    <h2>Como Rezar o Rosário</h2>
+                    <button id="close-guide" class="btn-close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <div class="guide-sections">
+                    <div class="guide-section">
+                        <h3><i class="fas fa-pray"></i> As Orações</h3>
+                        <div class="prayer-cards">
+                            <div class="prayer-card">
+                                <h4>Pai Nosso</h4>
+                                <p>Pai Nosso que estais nos Céus, santificado seja o vosso Nome, venha a nós o vosso Reino, seja feita a vossa vontade assim na terra como no Céu...</p>
+                            </div>
+                            <div class="prayer-card">
+                                <h4>Ave Maria</h4>
+                                <p>Ave Maria, cheia de graça, o Senhor é convosco, bendita sois vós entre as mulheres e bendito é o fruto do vosso ventre, Jesus...</p>
+                            </div>
+                            <div class="prayer-card">
+                                <h4>Glória</h4>
+                                <p>Glória ao Pai, ao Filho e ao Espírito Santo. Como era no princípio, agora e sempre. Amém.</p>
+                            </div>
+                            <div class="prayer-card">
+                                <h4>Salve Rainha</h4>
+                                <p>Salve Rainha, Mãe de misericórdia, vida, doçura e esperança nossa, salve! A vós bradamos, os degredados filhos de Eva...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="guide-section">
+                        <h3><i class="fas fa-route"></i> Ordem da Oração</h3>
+                        <div class="order-steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Fazer o Sinal da Cruz</h4>
+                                    <p>Em nome do Pai, do Filho e do Espírito Santo. Amém.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Rezar o Credo</h4>
+                                    <p>Creio em Deus Pai todo-poderoso, criador do Céu e da terra...</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Pai Nosso (conta grande)</h4>
+                                    <p>Uma vez na conta grande</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4>Ave Maria (3 contas pequenas)</h4>
+                                    <p>Três Ave Marias nas contas pequenas</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">5</div>
+                                <div class="step-content">
+                                    <h4>Glória (conta pequena)</h4>
+                                    <p>Um Glória na conta pequena</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">6</div>
+                                <div class="step-content">
+                                    <h4>Mistérios (5 décadas)</h4>
+                                    <p>Para cada mistério: Pai Nosso + 10 Ave Marias + Glória</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="guide-section">
+                        <h3><i class="fas fa-mobile-alt"></i> Como Usar o Site</h3>
+                        <div class="usage-tips">
+                            <div class="tip">
+                                <i class="fas fa-calendar"></i>
+                                <p>O site mostra automaticamente os mistérios do dia</p>
+                            </div>
+                            <div class="tip">
+                                <i class="fas fa-arrow-right"></i>
+                                <p>Use os botões "Avançar" e "Voltar" para navegar</p>
+                            </div>
+                            <div class="tip">
+                                <i class="fas fa-circle"></i>
+                                <p>As bolinhas mostram seu progresso nos mistérios</p>
+                            </div>
+                            <div class="tip">
+                                <i class="fas fa-bookmark"></i>
+                                <p>Seu progresso é salvo automaticamente</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main screen of the Rosary -->
+        <div id="rosary-screen" class="screen">
+            <div class="rosary-header">
+                <div class="day-info">
+                    <h2 id="day-title">Mistérios do Dia</h2>
+                    <p id="current-date"></p>
+                </div>
+                <div class="header-actions">
+                    <button id="dark-mode-toggle" class="btn-icon">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button id="back-to-welcome" class="btn-icon">
+                        <i class="fas fa-home"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Visualization of the third -->
+            <div class="rosary-visualization">
+                <div class="rosary-container">
+                    <!-- Cross -->
+                    <div class="cross-section">
+                        <div class="cross-bead" id="cross-bead">
+                            <i class="fas fa-cross"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Initial beads -->
+                    <div class="initial-beads">
+                        <div class="large-bead" id="large-bead-1">
+                            <span>Pai Nosso</span>
+                        </div>
+                        <div class="small-beads">
+                            <div class="small-bead" id="small-bead-1">
+                                <span>Ave Maria</span>
+                            </div>
+                            <div class="small-bead" id="small-bead-2">
+                                <span>Ave Maria</span>
+                            </div>
+                            <div class="small-bead" id="small-bead-3">
+                                <span>Ave Maria</span>
+                            </div>
+                        </div>
+                        <div class="large-bead" id="large-bead-2">
+                            <span>Glória</span>
+                        </div>
+                    </div>
+
+                    <!-- Decades -->
+                    <div class="decades-container">
+                        <div class="decade" data-decade="1">
+                            <div class="decade-header">
+                                <h4 id="mystery-title-1">1º Mistério</h4>
+                            </div>
+                            <div class="decade-beads">
+                                <div class="large-bead decade-pater" id="pater-1">
+                                    <span>Pai Nosso</span>
+                                </div>
+                                <div class="small-beads-decade">
+                                    <div class="small-bead decade-ave" id="ave-1-1">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-1-2">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-1-3">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-1-4">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-1-5">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-1-6">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-1-7">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-1-8">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-1-9">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-1-10">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                </div>
+                                <div class="large-bead decade-gloria" id="gloria-1">
+                                    <span>Glória</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="decade" data-decade="2">
+                            <div class="decade-header">
+                                <h4 id="mystery-title-2">2º Mistério</h4>
+                            </div>
+                            <div class="decade-beads">
+                                <div class="large-bead decade-pater" id="pater-2">
+                                    <span>Pai Nosso</span>
+                                </div>
+                                <div class="small-beads-decade">
+                                    <div class="small-bead decade-ave" id="ave-2-1">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-2-2">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-2-3">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-2-4">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-2-5">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-2-6">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-2-7">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-2-8">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-2-9">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-2-10">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                </div>
+                                <div class="large-bead decade-gloria" id="gloria-2">
+                                    <span>Glória</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="decade" data-decade="3">
+                            <div class="decade-header">
+                                <h4 id="mystery-title-3">3º Mistério</h4>
+                            </div>
+                            <div class="decade-beads">
+                                <div class="large-bead decade-pater" id="pater-3">
+                                    <span>Pai Nosso</span>
+                                </div>
+                                <div class="small-beads-decade">
+                                    <div class="small-bead decade-ave" id="ave-3-1">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-3-2">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-3-3">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-3-4">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-3-5">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-3-6">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-3-7">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-3-8">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-3-9">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-3-10">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                </div>
+                                <div class="large-bead decade-gloria" id="gloria-3">
+                                    <span>Glória</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="decade" data-decade="4">
+                            <div class="decade-header">
+                                <h4 id="mystery-title-4">4º Mistério</h4>
+                            </div>
+                            <div class="decade-beads">
+                                <div class="large-bead decade-pater" id="pater-4">
+                                    <span>Pai Nosso</span>
+                                </div>
+                                <div class="small-beads-decade">
+                                    <div class="small-bead decade-ave" id="ave-4-1">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-4-2">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-4-3">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-4-4">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-4-5">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-4-6">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-4-7">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-4-8">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-4-9">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-4-10">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                </div>
+                                <div class="large-bead decade-gloria" id="gloria-4">
+                                    <span>Glória</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="decade" data-decade="5">
+                            <div class="decade-header">
+                                <h4 id="mystery-title-5">5º Mistério</h4>
+                            </div>
+                            <div class="decade-beads">
+                                <div class="large-bead decade-pater" id="pater-5">
+                                    <span>Pai Nosso</span>
+                                </div>
+                                <div class="small-beads-decade">
+                                    <div class="small-bead decade-ave" id="ave-5-1">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-5-2">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-5-3">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-5-4">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-5-5">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-5-6">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-5-7">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-5-8">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-5-9">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                    <div class="small-bead decade-ave" id="ave-5-10">
+                                        <span>Ave Maria</span>
+                                    </div>
+                                </div>
+                                <div class="large-bead decade-gloria" id="gloria-5">
+                                    <span>Glória</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Current mystery content -->
+            <div class="mystery-content">
+                <div class="mystery-header">
+                    <h3 id="current-mystery-title">Carregando...</h3>
+                    <div class="mystery-number">
+                        <span id="current-decade">1</span>ª dezena de <span id="total-decades">5</span>
+                    </div>
+                </div>
+
+                <div class="bible-verse">
+                    <div class="verse-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="verse-content">
+                        <p id="bible-text">Carregando versículo...</p>
+                        <cite id="bible-reference">- Lucas 1:26-38</cite>
+                    </div>
+                </div>
+
+                <div class="prayer-section">
+                    <div class="prayer-type">
+                        <h4 id="current-prayer-title">Oração Atual</h4>
+                        <p id="prayer-text">Carregando oração...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="navigation">
+                <button id="prev-btn" class="btn-nav" disabled>
+                    <i class="fas fa-chevron-left"></i>
+                    Anterior
+                </button>
+                
+                <div class="progress-dots">
+                    <div class="dot active" data-decade="1"></div>
+                    <div class="dot" data-decade="2"></div>
+                    <div class="dot" data-decade="3"></div>
+                    <div class="dot" data-decade="4"></div>
+                    <div class="dot" data-decade="5"></div>
+                </div>
+
+                <button id="next-btn" class="btn-nav">
+                    Próximo
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <!-- Completion message -->
+            <div class="completion-message" id="completion-message" style="display: none;">
+                <div class="completion-content">
+                    <i class="fas fa-star"></i>
+                    <h3>Parabéns!</h3>
+                    <p>Você completou todos os mistérios do Rosário.</p>
+                    <button id="restart-btn" class="btn-primary">
+                        <i class="fas fa-redo"></i>
+                        Rezar Novamente
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
