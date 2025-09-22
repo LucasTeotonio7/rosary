@@ -68,32 +68,32 @@ $(document).ready(function() {
         glorious: [
             {
                 title: "A Ressurreição de Jesus",
-                bibleText: "Não está aqui, mas ressuscitou. Lembrai-vos de como vos falou, estando ainda na Galileia.",
-                bibleReference: "Lucas 24:6",
+                bibleText: "No primeiro dia da semana, de manhã bem cedo, as mulheres foram ao sepulcro levando os perfumes que haviam preparado. Encontraram a pedra removida, mas não acharam o corpo do Senhor Jesus. Enquanto estavam perplexas, dois homens com vestes resplandecentes lhes disseram: 'Por que buscais entre os mortos aquele que vive? Não está aqui, mas ressuscitou. Lembrai-vos de como vos falou, estando ainda na Galileia.'",
+                bibleReference: "Lucas 24:1-6",
                 prayer: "Rezemos para que, como Jesus ressuscitado, tenhamos a esperança da vida eterna e a alegria de anunciar a Boa Nova da salvação."
             },
             {
                 title: "A Ascensão de Jesus ao Céu",
-                bibleText: "E, quando os abençoava, distanciou-se deles e foi elevado ao céu.",
-                bibleReference: "Lucas 24:51",
+                bibleText: "Jesus disse aos discípulos que era necessário que se cumprisse tudo o que estava escrito sobre Ele na Lei de Moisés, nos Profetas e nos Salmos. Então abriu o entendimento deles para compreenderem as Escrituras, explicando que o Cristo devia padecer, ressuscitar ao terceiro dia e que em Seu nome se pregaria o arrependimento e o perdão dos pecados a todas as nações. E acrescentou: 'Vós sois testemunhas destas coisas. Eu envio sobre vós a promessa de meu Pai; permanecei, pois, na cidade até que sejais revestidos de poder do alto.' Então os levou até Betânia e, levantando as mãos, os abençoou. Enquanto os abençoava, afastou-se deles e foi elevado ao céu. Eles, depois de O adorarem, voltaram para Jerusalém com grande alegria e estavam sempre no templo, louvando a Deus.",
+                bibleReference: "Lucas 24:44-53",
                 prayer: "Rezemos para que, como os apóstolos, sejamos testemunhas de Cristo no mundo, anunciando Sua mensagem de amor e salvação."
             },
             {
                 title: "A Descida do Espírito Santo",
-                bibleText: "E todos foram cheios do Espírito Santo e começaram a falar noutras línguas, conforme o Espírito Santo lhes concedia que falassem.",
-                bibleReference: "Atos 2:4",
+                bibleText: "Ao cumprir-se o dia de Pentecostes, estavam todos reunidos no mesmo lugar. De repente, veio do céu um som, como de um vento impetuoso, e encheu toda a casa onde estavam sentados. E apareceram distribuídas entre eles línguas como de fogo, e pousou uma sobre cada um deles. Todos ficaram cheios do Espírito Santo e começaram a falar em outras línguas, conforme o Espírito lhes concedia.",
+                bibleReference: "Atos 2:1-4",
                 prayer: "Rezemos para que o Espírito Santo nos encha com Seus dons e frutos, guiando-nos em toda verdade e santidade."
             },
             {
                 title: "A Assunção de Maria ao Céu",
-                bibleText: "A minha alma engrandece ao Senhor, e se alegrou o meu espírito em Deus, meu Salvador.",
-                bibleReference: "Lucas 1:46-47",
+                bibleText: "A minha alma engrandece ao Senhor, e o meu espírito se alegra em Deus, meu Salvador, porque atentou na humildade da sua serva. Pois eis que, desde agora, todas as gerações me chamarão bem-aventurada.",
+                bibleReference: "Lucas 1:46-48",
                 prayer: "Rezemos para que, como Maria, tenhamos a graça de ser elevados ao céu, corpo e alma, para viver eternamente com Deus."
             },
             {
                 title: "A Coroação de Maria como Rainha do Céu",
-                bibleText: "Apareceu no céu um grande sinal: uma mulher vestida do sol, tendo a lua debaixo dos seus pés, e uma coroa de doze estrelas sobre a sua cabeça.",
-                bibleReference: "Apocalipse 12:1",
+                bibleText: "Apareceu no céu um grande sinal: uma mulher vestida do sol, com a lua debaixo dos pés, e uma coroa de doze estrelas sobre a cabeça. Estava grávida e gritava com as dores de parto, sofrendo tormentos para dar à luz. ⁵ E deu à luz um filho homem que há de reger todas as nações com cetro de ferro; e o seu filho foi arrebatado para Deus e para o seu trono",
+                bibleReference: "Apocalipse 12:1-2, 12:5",
                 prayer: "Rezemos para que, como Maria, sejamos coroados com a glória eterna, participando da vitória de Cristo sobre o pecado e a morte."
             }
         ],
@@ -163,7 +163,7 @@ $(document).ready(function() {
         },
         thanksgiving: {
             title: "Agradecimento Final",
-            text: "Infinitas graças vos damos, Soberana Rainha, pelos benefícios que todos os dias recebemos de vossa mão liberais. Dignai-vos, agora e para sempre, tomar-nos debaixo do vosso poderoso amparo e para mais vos obrigar, vos saudamos com uma Salve Rainha."
+            text: "Infinitas graças vos damos, Soberana Rainha, pelos benefícios que todos os dias recebemos de vossa mão liberais. Dignai-vos, agora e para sempre, tomar-nos debaixo do vosso poderoso amparo e para mais vos agradecer, vos saudamos com uma Salve Rainha."
         },
         salve: {
             title: "Salve Rainha",
