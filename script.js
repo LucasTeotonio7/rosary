@@ -4,32 +4,32 @@ $(document).ready(function() {
         joyful: [
             {
                 title: "A Anunciação do Anjo a Maria",
-                bibleText: "O anjo Gabriel foi enviado por Deus a uma cidade da Galileia, chamada Nazaré, a uma virgem desposada com um homem chamado José, da casa de Davi; e o nome da virgem era Maria.",
-                bibleReference: "Lucas 1:26-27",
+                bibleText: "O anjo Gabriel foi enviado por Deus a uma cidade da Galileia, chamada Nazaré, a uma virgem desposada com um homem chamado José, da casa de Davi; e o nome da virgem era Maria. Entrando o anjo onde ela estava, disse: “Alegra-te, cheia de graça, o Senhor está contigo!” Ela, porém, ao ouvir essa palavra, perturbou-se muito e pôs-se a pensar no que significaria essa saudação. O anjo disse-lhe: “Não temas, Maria! Encontraste graça junto de Deus. Eis que conceberás e darás à luz um filho, e tu o chamarás com o nome de Jesus. Ele será grande e será chamado Filho do Altíssimo; e o Senhor Deus lhe dará o trono de seu pai Davi; ele reinará para sempre sobre a casa de Jacó, e o seu reino não terá fim.” Maria perguntou ao anjo: “Como se fará isso, pois não conheço homem?” O anjo respondeu-lhe: “O Espírito Santo virá sobre ti, e o poder do Altíssimo te cobrirá com a sua sombra; por isso, aquele que vai nascer será chamado Santo, Filho de Deus. Também Isabel, tua parenta, concebeu um filho na sua velhice, e este já é o sexto mês daquela que era chamada estéril, porque para Deus nada é impossível.” Então, disse Maria: “Eis aqui a serva do Senhor; faça-se em mim segundo a tua palavra.” E o anjo retirou-se de junto dela.",
+                bibleReference: "Lucas 1:26–38",
                 prayer: "Rezemos para que, como Maria, tenhamos a coragem de dizer 'sim' à vontade de Deus em nossas vidas, confiando em Sua providência e amor."
             },
             {
                 title: "A Visitação de Maria a Santa Isabel",
-                bibleText: "Maria levantou-se e foi às pressas às montanhas, a uma cidade de Judá. Entrou na casa de Zacarias e saudou Isabel.",
-                bibleReference: "Lucas 1:39-40",
+                bibleText: "Maria levantou-se e foi às pressas às montanhas, a uma cidade de Judá. Entrou na casa de Zacarias e saudou Isabel. Quando Isabel ouviu a saudação de Maria, a criança saltou no seu seio, e Isabel ficou cheia do Espírito Santo. Exclamou em alta voz: “Bendita és tu entre as mulheres e bendito é o fruto do teu ventre! Donde me vem esta honra de vir a mim a mãe do meu Senhor? Pois assim que a voz da tua saudação chegou aos meus ouvidos, a criança pulou de alegria no meu seio. Bem-aventurada aquela que acreditou, pois o que lhe foi dito da parte do Senhor será cumprido.” Então Maria disse: “A minha alma engrandece ao Senhor e o meu espírito se alegra em Deus, meu Salvador, porque olhou para a humildade de sua serva. De agora em diante todas as gerações me chamarão bem-aventurada, porque o Todo-poderoso fez em mim maravilhas, santo é o seu nome.",
+                bibleReference: "Lucas 1:39-49",
                 prayer: "Rezemos para que, como Maria, sejamos portadores da alegria de Cristo aos outros, visitando e servindo aos necessitados com caridade."
             },
             {
                 title: "O Nascimento de Jesus em Belém",
-                bibleText: "E deu à luz seu filho primogênito, e envolveu-o em panos, e deitou-o numa manjedoura, porque não havia lugar para eles na estalagem.",
-                bibleReference: "Lucas 2:7",
+                bibleText: "Naqueles dias, saiu um decreto da parte de César Augusto, ordenando o recenseamento de todo o império. Este foi o primeiro recenseamento realizado quando Quirino era governador da Síria. Todos iam alistar-se, cada um na sua cidade. José também subiu da Galileia, da cidade de Nazaré, para a Judeia, à cidade de Davi chamada Belém, porque era da casa e da linhagem de Davi, a fim de alistar-se com Maria, sua esposa, que estava grávida. Enquanto estavam ali, completaram-se os dias dela. E deu à luz o seu filho primogênito, envolveu-o em panos e deitou-o numa manjedoura, porque não havia lugar para eles na estalagem.",
+                bibleReference: "Lucas 2:1–7",
                 prayer: "Rezemos para que, como Jesus, sejamos humildes e simples, encontrando Deus na simplicidade e na pobreza de coração."
             },
             {
                 title: "A Apresentação de Jesus no Templo",
-                bibleText: "Quando se completaram os dias da purificação, segundo a lei de Moisés, levaram-no a Jerusalém para o apresentar ao Senhor.",
-                bibleReference: "Lucas 2:22",
+                bibleText: "Quando se completaram os dias da purificação, segundo a lei de Moisés, levaram Jesus a Jerusalém para apresentá-lo ao Senhor, conforme está escrito na lei do Senhor: “Todo primogênito do sexo masculino será consagrado ao Senhor”; e para oferecer em sacrifício um par de pombas ou dois pombinhos, como está prescrito na lei do Senhor.",
+                bibleReference: "Lucas 2:22–24",
                 prayer: "Rezemos para que, como Maria e José, ofereçamos tudo a Deus com gratidão e obediência, reconhecendo que tudo vem d'Ele."
             },
             {
                 title: "O Encontro de Jesus no Templo",
-                bibleText: "Três dias depois, encontraram-no no templo, sentado no meio dos doutores, ouvindo-os e interrogando-os.",
-                bibleReference: "Lucas 2:46",
+                bibleText: "Os pais de Jesus iam todos os anos a Jerusalém, à festa da Páscoa. Quando ele atingiu doze anos, subiram a Jerusalém, segundo o costume da festa. Terminados os dias, quando voltavam, ficou o menino Jesus em Jerusalém, sem que seus pais o percebessem. Pensando que estivesse na caravana, caminharam o caminho de um dia e o procuravam entre parentes e conhecidos. Mas, não o encontrando, voltaram a Jerusalém à sua procura. Três dias depois, encontraram-no no templo, sentado no meio dos doutores, ouvindo-os e interrogando-os. Todos os que o ouviam estavam maravilhados com sua inteligência e suas respostas. Ao vê-lo, seus pais ficaram admirados, e sua mãe lhe disse: “Filho, por que agiste assim conosco? Olha, teu pai e eu andávamos aflitos à tua procura.” Ele lhes respondeu: “Por que me procuráveis? Não sabíeis que devo estar na casa de meu Pai?” Eles, porém, não compreenderam a palavra que lhes disse. Então desceu com eles, voltou para Nazaré e lhes era submisso. Sua mãe guardava todas essas coisas em seu coração. E Jesus crescia em sabedoria, estatura e graça diante de Deus e dos homens.",
+                bibleReference: "Lucas 2:41–52",
                 prayer: "Rezemos para que, como Jesus, cresçamos em sabedoria e graça, buscando sempre a vontade do Pai e dedicando-nos ao estudo da Palavra de Deus."
             }
         ],
